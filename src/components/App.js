@@ -1,9 +1,6 @@
 import React, { PropTypes } from 'react';
-import { Link, IndexLink } from 'react-router';
 import JumboTron from './Header';
 import * as rB from 'react-bootstrap';
-
-
 
 // This is a class-based component because the current
 // version of hot reloading won't hot reload a stateless
