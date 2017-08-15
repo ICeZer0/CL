@@ -18,6 +18,7 @@ import './styles/styles.scss'; // Yep, that's right. You can import SASS/CSS fil
 import '../node_modules/react-bootstrap/dist/react-bootstrap.min';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
+import '../node_modules/font-awesome/css/font-awesome.min.css';
 
 render(
     <Router history={browserHistory} routes={routes} />

@@ -18,13 +18,13 @@ class App extends React.Component {
         <rB.Navbar>
           <rB.Navbar.Header>
             <rB.Navbar.Brand>
-              <a href="/">Compassionate Lucy</a>
+              <a className="fa fa-home fa-3x" href="/"></a>
             </rB.Navbar.Brand>
             <rB.Navbar.Toggle />
           </rB.Navbar.Header>
           <rB.Navbar.Collapse>
             <rB.Nav>
-              <rB.NavItem eventKey={1} href="#">Link1</rB.NavItem>
+              <rB.NavItem eventKey={1} href="/fuel-savings">Link1</rB.NavItem>
               <rB.NavItem eventKey={2} href="#">Link2</rB.NavItem>
             </rB.Nav>
             <rB.Nav pullRight>
@@ -32,10 +32,6 @@ class App extends React.Component {
             </rB.Nav>
           </rB.Navbar.Collapse>
         </rB.Navbar>
-
-        <IndexLink to="/">Home</IndexLink>
-        {' | '}
-        <Link to="/fuel-savings">Demo App</Link>
         <br/>
         {this.props.children}
       </div>
