@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# NO READ
 
-=======
-#ReadMe
->>>>>>> development
+# NO READ
+### ReadMe
+
