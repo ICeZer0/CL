@@ -4,16 +4,71 @@ $vin-green: #60b044;
 $vin-red: #ff0000;
 
 /* Styles */
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+
+.Body {
+  margin-top: 0px;
+  max-width: 100%;
+}
 
 div.jumbotron {
   margin-bottom: 0px;
+  background: url('../assets/CompassionateHeader.png');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+  height: 300px;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: black;
+  text-align: right;
+  font-size: 70%;
+  color: white;
 }
 
 .navbar.navbar-default .container {
-  //margin-left: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .fa.fa-home {
   padding-top: 10px;
   margin-bottom: 10px;
+}
+
+#section-1{
+  background-color: blue;
+}
+
+#section-2{
+  background-color: black;
+}
+
+#section-2{
+  background-color:white;
 }
