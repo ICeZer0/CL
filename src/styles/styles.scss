@@ -52,10 +52,23 @@ div.jumbotron {
 }
 
 .navbar.navbar-default .container {
-  //position: relative;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .fa.fa-home {
   padding-top: 10px;
   margin-bottom: 10px;
+}
+
+#section-1{
+  background-color: blue;
+}
+
+#section-2{
+  background-color: black;
+}
+
+#section-2{
+  background-color:white;
 }

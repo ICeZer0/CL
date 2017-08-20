@@ -11,8 +11,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <JumboTron />
         <div className="Body">
-          <JumboTron />
           <NavBar />
         </div>
         <div className="contentBody">
