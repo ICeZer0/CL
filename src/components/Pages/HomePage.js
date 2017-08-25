@@ -1,120 +1,88 @@
 import React from 'react';
-import {Link} from 'react-router';
+//import PropTypes from 'prop-types';
+import * as rB from 'react-bootstrap';
+import AboutPage from '../Pages/AboutPage';
+import ServicesPage from '../Pages/ServicesPage';
+import Faq from '../Pages/FaqPage';
+import Careers from '../Pages/CareersPage';
+import Testimonials from '../Pages/TestimonialPage';
+import Contacts from '../Pages/ContactPage';
+//import { Scrollspy } from 'react-scrollspy';
 
-const HomePage = () => {
-  return (
-    <div>
-      <h1>React Slingshot</h1>
-      <h2>Get Started</h2>
-      <ol>
-        <li>Review the <Link to="fuel-savings">demo app</Link></li>
-        <li>Remove the demo and start coding: npm run remove-demo</li>
-        Welcome to Compassionate
-Lucy's senior Home Care
+export default class CompassionateLucyHome extends React.Component {
 
-<li>At Compassionate Lucy's senior Home Care we provide
-seniors with quality care that enables them to live dignified,
-happy and healthy lives in the comfort of their own home.
+  render() {
+    return (
+      <div>
+        <div>
+          <rB.Navbar id="navbar">
+            <rB.Navbar.Header>
+              <rB.Navbar.Brand>
+                <a className="fa fa-home fa-2x" onClick={() => window.scrollTo(0,0)} />
+              </rB.Navbar.Brand>
+              <rB.Navbar.Toggle />
+            </rB.Navbar.Header>
+            <rB.Navbar.Collapse>
+              <rB.Nav pullRight>
+              <rB.NavItem href="#about" id="navItem">About Us</rB.NavItem>
+                  <rB.NavItem href="#services" id="navItem">Services</rB.NavItem>
+                  <rB.NavItem href="#faq" id="navItem">FAQ's</rB.NavItem>
+                  <rB.NavItem href="#testimonials" id="navItem">Testimonials</rB.NavItem>
+                  <rB.NavItem href="#careers" id="navItem">Careers</rB.NavItem>
+                  <rB.NavItem href="#contact" id="navItem">Contact Us</rB.NavItem>
+              </rB.Nav>
+            </rB.Navbar.Collapse>
+          </rB.Navbar>
+        </div>
 
-We provide premium home care to seniors throughout
-Minnesota, wherever they call home:
-Home
-Independent Living Community
-Assisted Living Community
-Nursing Home
+        <div id="home" data-spy="scroll" data-target="#navbar">
 
-Our caregivers embrace a positive balanced approach to seniors focusing on their needs and requirements. By rigorously screening our caregivers, we find the best, most reliable and with compassion that comes from the heart.
+          <section id="about" className="page">
+            <div className="aboutSection">
+              <AboutPage />
+            </div>
+          </section>
 
-Our caregivers are trained by providing them with education of activities and factors that have been proven to extend the health and quality of life. We match our caregivers to the needs of clients and are dedicated to family well-being, enhancing safety, eliminating confusion and fostering companionship.
+          <section id="services" className="page">
+            <div className="ServicesSection">
+              <ServicesPage />
+            </div>
+          </section>
 
-With on-going training and supervision, all of our caregivers are bonded and insured for your family's protection. Our caregivers are on call 24 hours a day including weekends and holidays and we specialize in 24 hours and live-in home care. We provide several services including the following:
-hospice/respite care
-skilled care
-companion care
-massage occupational and physical therapy.
+          <section id="faq" className="page">
+            <div className="faqSection">
+              <Faq />
+            </div>
+          </section>
 
-Welcome to Compassionate
-Lucy's senior Home Care
+          <section id="testimonials" className="page">
+            <div className="testimonialSection">
+              <Testimonials />
+            </div>
+          </section>
 
-At Compassionate Lucy's senior Home Care we provide
-seniors with quality care that enables them to live dignified,
-happy and healthy lives in the comfort of their own home.
+          <section id="careers" className="page">
+            <div className="careersSection">
+              <Careers />
+            </div>
+          </section>
 
-We provide premium home care to seniors throughout
-Minnesota, wherever they call home:
-Home
-Independent Living Community
-Assisted Living Community
-Nursing Home </li>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+          <section id="contact" className="page">
+            <div className="contactSection">
+              <Contacts />
+            </div>
+          </section>
 
-<li>Our caregivers embrace a positive balanced approach to seniors focusing on their needs and requirements. By rigorously screening our caregivers, we find the best, most reliable and with compassion that comes from the heart.
+        </div>
+      </div>
+    );
+  }
+}
 
-Our caregivers are trained by providing them with education of activities and factors that have been proven to extend the health and quality of life. We match our caregivers to the needs of clients and are dedicated to family well-being, enhancing safety, eliminating confusion and fostering companionship.
+// NavBar.propTypes = {
+//   scrollStepInPx: PropTypes.num,
+//   delayInMs: PropTypes.num
+// };
 
-With on-going training and supervision, all of our caregivers are bonded and insured for your family's protection. Our caregivers are on call 24 hours a day including weekends and holidays and we specialize in 24 hours and live-in home care. We provide several services including the following:
-hospice/respite care
-skilled care
-companion care
-massage occupational and physical therapy.
 
-Welcome to Compassionate
-Lucy's senior Home Care
 
-At Compassionate Lucy's senior Home Care we provide
-seniors with quality care that enables them to live dignified,
-happy and healthy lives in the comfort of their own home.
-
-We provide premium home care to seniors throughout
-Minnesota, wherever they call home:
-Home
-Independent Living Community
-Assisted Living Community
-Nursing Home
-
-Our caregivers embrace a positive balanced approach to seniors focusing on their needs and requirements. By rigorously screening our caregivers, we find the best, most reliable and with compassion that comes from the heart.
-
-Our caregivers are trained by providing them with education of activities and factors that have been proven to extend the health and quality of life. We match our caregivers to the needs of clients and are dedicated to family well-being, enhancing safety, eliminating confusion and fostering companionship.
-
-With on-going training and supervision, all of our caregivers are bonded and insured for your family's protection. Our caregivers are on call 24 hours a day including weekends and holidays and we specialize in 24 hours and live-in home care. We provide several services including the following:
-hospice/respite care
-skilled care
-companion care
-massage occupational and physical therapy.
-
-Welcome to Compassionate
-Lucy's senior Home Care
-
-At Compassionate Lucy's senior Home Care we provide
-seniors with quality care that enables them to live dignified,
-happy and healthy lives in the comfort of their own home.
-
-We provide premium home care to seniors throughout
-Minnesota, wherever they call home:
-Home
-Independent Living Community
-Assisted Living Community
-Nursing Home
-
-Our caregivers embrace a positive balanced approach to seniors focusing on their needs and requirements. By rigorously screening our caregivers, we find the best, most reliable and with compassion that comes from the heart.
-
-Our caregivers are trained by providing them with education of activities and factors that have been proven to extend the health and quality of life. We match our caregivers to the needs of clients and are dedicated to family well-being, enhancing safety, eliminating confusion and fostering companionship.
-
-With on-going training and supervision, all of our caregivers are bonded and insured for your family's protection. Our caregivers are on call 24 hours a day including weekends and holidays and we specialize in 24 hours and live-in home care. We provide several services including the following:
-hospice/respite care
-skilled care
-companion care
-massage occupational and physical therapy.</li>
-      </ol>
-    </div>
-  );
-};
-
-export default HomePage;

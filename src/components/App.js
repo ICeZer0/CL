@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import JumboTron from './Header/Header';
-import NavBar from './Header/NavBar';
+//import NavBar from './Header/NavBar';
 import Footer from './Header/Footer';
 
 // This is a class-based component because the current
@@ -13,9 +13,6 @@ class App extends React.Component {
       <div>
         <JumboTron />
         <div className="Body">
-          <NavBar />
-        </div>
-        <div className="contentBody">
           {this.props.children}
         </div>
         <Footer/>
